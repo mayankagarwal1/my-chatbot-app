@@ -3,7 +3,9 @@
     "types": [
     "node"
   ],
-    "target": "es6",
+  
+    "target": "es5",
+   
     "lib": [
       "dom",
       "dom.iterable",
@@ -20,10 +22,17 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "noEmit": false,
+    "jsx": "react"
   },
+  "ts-node": {
+        "compilerOptions": {
+        "module": "CommonJS"
+     }
+    },
   "include": [
-    "src"
+    "src",
+    "src/**/*.tsx",
+    "src/**/*.ts"
   ]
 }

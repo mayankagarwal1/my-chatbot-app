@@ -22,6 +22,7 @@ app.post('/api/13', async (req: Request, res: Response) => {
   });
 
   const botResponse = completion.choices[0].message.content;
+  // const botResponse = "hey i see you are checking ";
 
   // Send JSON response with bot's response
   res.json({ response: botResponse });
